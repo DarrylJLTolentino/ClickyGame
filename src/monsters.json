@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Great Jagras",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-great_jagras_icon.png"
+    },
+    {
+        "id": 2,
+        "name": "Rathalos",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-rathalos_icon.png"
+    },
+    {
+        "id": 3,
+        "name": "Odogaron",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-odogaron_icon.png"
+    },
+    {
+        "id": 4,
+        "name": "Legiana",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-legiana_icon.png"
+    },
+    {
+        "id": 5,
+        "name": "Tobi-Kadachi",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-tobi-kadachi_icon.png"
+    },
+    {
+        "id": 6,
+        "name": "Barroth",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/gthumbnails/MHW-Barroth_Icon.png"
+    },
+    {
+        "id": 7,
+        "name": "Anjanath",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-anjanath_icon.png"
+    },
+    {
+        "id": 8,
+        "name": "Nergigante",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-nergigante_icon.png"
+    },
+    {
+        "id": 9,
+        "name": "Teostra",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-teostra_icon.png"
+    },
+    {
+        "id": 10,
+        "name": "Vaal Hazak",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-vaal_hazak_icon.png"
+    },
+    {
+        "id": 11,
+        "name": "Kushala Daora",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-kushala_daora_icon.png"
+    },
+    {
+        "id": 12,
+        "name": "Xeno'jiiva",
+        "image": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-xeno'jiiva_icon.png"
+    }
+]
