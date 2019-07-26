@@ -1,0 +1,8 @@
+.monsterImage {
+    height: 185px;
+    width: 185px;
+    margin: 10px 20px;
+}
+.monsterCard {
+    cursor: pointer;
+}
