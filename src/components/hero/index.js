@@ -13,10 +13,14 @@ function Hero(props) {
 
     return (
         <div>
-            <div style = {heroImage} className="jumbotron jumbotron-fluid">
+            <div style={heroImage} className="jumbotron jumbotron-fluid">
                 <div className="container text-left">
                     <h1 className="display-4">Monster Hunter!</h1>
-                    <p className="lead">Click on an image to slay the monster! Don't click the same monster or you lose!</p>
+                    {!props.name ?
+                        <p className="lead">Click on an image to slay the monster! Don't click the same monster or you lose!</p>
+                        :
+                        <p className="lead">You have slain the mighty {props.name}! Choose another monster to slay!</p>
+                    }
                 </div>
             </div>
         </div>
