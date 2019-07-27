@@ -11,7 +11,7 @@ function Nav(props) {
                     </a>
                 </li>
                 <li className = "nav-item">
-                    <p className = "score">Score: {props.score} / High Score: {props.high_score}</p>
+                    <p className = "score">Score: {props.score} / High Score: {props.high_score} / Wins: {props.wins} / Loses: {props.loses}</p>
                 </li>
             </ul>
         </div>
