@@ -14,7 +14,7 @@ function Hero(props) {
     return (
         <div>
             <div style = {heroImage} className="jumbotron jumbotron-fluid">
-                <div className="container">
+                <div className="container text-left">
                     <h1 className="display-4">Monster Hunter!</h1>
                     <p className="lead">Click on an image to slay the monster! Don't click the same monster or you lose!</p>
                 </div>

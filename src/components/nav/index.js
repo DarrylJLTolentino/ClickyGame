@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 function Nav(props) {
     return (
@@ -10,7 +11,7 @@ function Nav(props) {
                     </a>
                 </li>
                 <li className = "nav-item">
-                    <p>Score: {props.score} / High Score: {props.high_score}</p>
+                    <p className = "score">Score: {props.score} / High Score: {props.high_score}</p>
                 </li>
             </ul>
         </div>
