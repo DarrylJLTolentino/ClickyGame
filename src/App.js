@@ -12,8 +12,12 @@ class App extends Component {
   state = {
     score: 0,
     high_score: 0,
+    wins: 0,
+    loses: 0,
     monsters: monsters,
-    currentMonster: {}
+    currentMonster: {},
+    lossImage: "",
+    slainMessage: ""
   };
 
   reset = () => {
@@ -22,7 +26,10 @@ class App extends Component {
       monster.clicked = false
     ));
     this.setState({
-      score: 0
+      score: 0,
+      currentMonster: {},
+      lossImage: "https://www.nicepng.com/png/full/183-1836148_guild-stamp-of-disapproval-monster-hunter-world-quest.png",
+      slainMessage: ""
     });
   };
 
@@ -42,24 +49,29 @@ class App extends Component {
         if (this.state.score + 1 === 12) {
           foundMonster.heroImage = "https://res.cloudinary.com/lmn/image/upload/e_sharpen:150,f_auto,fl_lossy,q_80/v1/gameskinnyc/q/u/e/quest-clear-redbubble-682ed.jpg";
           this.setState({
-            currentMonster: foundMonster
+            currentMonster: foundMonster,
+            wins: this.state.wins + 1,
+            lossImage: ""
           });
         }
         this.setState({
           score: this.state.score + 1,
-          high_score: this.state.high_score + 1
+          high_score: this.state.high_score + 1,
+          slainMessage: `You have slain the mighty ${foundMonster.name}! Choose another monster to slay!`
         });
       }
       else {
         this.setState({
-          score: this.state.score + 1
+          score: this.state.score + 1,
+          slainMessage: `You have slain the mighty ${foundMonster.name}! Choose another monster to slay!`
         });
       }
     }
     else {
-      foundMonster.heroImage = "https://www.nicepng.com/png/full/183-1836148_guild-stamp-of-disapproval-monster-hunter-world-quest.png";
       this.setState({
-        currentMonster: foundMonster
+        currentMonster: foundMonster,
+        loses: this.state.loses + 1,
+        slainMessage: "You can't slay the same monster twice! Try again"
       })
       this.sort();
       this.reset();
@@ -69,8 +81,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Nav score={this.state.score} high_score={this.state.high_score} />
-        <Hero src={this.state.currentMonster.heroImage || "https://i.redd.it/diihdl111ln01.png"} name = {this.state.currentMonster.name} />
+        <Nav score={this.state.score} high_score={this.state.high_score} wins = {this.state.wins} loses = {this.state.loses} />
+        <Hero src={this.state.currentMonster.heroImage || this.state.lossImage || "https://i.redd.it/diihdl111ln01.png"} name = {this.state.slainMessage || "Click on an image to slay the monster! Don't click the same monster or you lose!"} />
         <GameSpace>
           {this.state.monsters.map((monster) => (
             <MonsterCard
