@@ -70,7 +70,7 @@ class App extends Component {
     return (
       <div>
         <Nav score={this.state.score} high_score={this.state.high_score} />
-        <Hero src={this.state.currentMonster.heroImage || "https://i.redd.it/diihdl111ln01.png"} />
+        <Hero src={this.state.currentMonster.heroImage || "https://i.redd.it/diihdl111ln01.png"} name = {this.state.currentMonster.name} />
         <GameSpace>
           {this.state.monsters.map((monster) => (
             <MonsterCard
