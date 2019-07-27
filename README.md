@@ -186,3 +186,23 @@ render() {
   }
 }
 ```
+
+| Technologies Used | References |
+| ----------------- | ---------- |
+| HTML | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| CSS | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| BootStrap | https://getbootstrap.com/ |
+| React | https://reactjs.org/ |
+| JavaScript | https://developer.mozilla.org/en-US/docs/Web/Javascript |
+| JSX | https://reactjs.org/docs/introducing-jsx.html |
+| Nodejs | https://nodejs.org/en/ |
+
+| Versioning | References |
+| ---------- | ---------- |
+| Github | https://github.com/ |
+
+Authors
+- Darryl Tolentino
+
+Acknowledgements
+- Jake Dudum: For helping me with syntax
